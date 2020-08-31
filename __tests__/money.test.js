@@ -18,7 +18,7 @@ describe('money and coin amounts', () => {
 
   test('Should correctly return the number of dimes needed', () => {
     userMoney.calculateChange();
-    expect(userMoney.dimes).toEqual(2);
+    expect(userMoney.dimes).toEqual(1);
   });
   
 });

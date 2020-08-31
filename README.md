@@ -26,8 +26,8 @@ Open by downloading:
 
 | Behavior   |   Input   |  Output |  Met? (Y/N)  |
 |----------|:-------------:|------:|-----------:|
-| Program should instantiate a new money object | n/a | userMoney{amount: $5.24} | N |
-| Program should determine the number of quarters, dimes, nickels, and pennies needed | $5.24 | 20 quarters, 2 dimes, 0 nickels, 4 pennies | N |
+| Program should instantiate a new money object | n/a | userMoney{amount: $5.42} | N |
+| Program should determine the number of quarters, dimes, nickels, and pennies needed | $5.42 | 21 quarters, 1 dimes, 1 nickels, 2 pennies | N |
 |  |  |  |  |
 |  |  |  |  |
 |  |  |  |  |
