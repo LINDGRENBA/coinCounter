@@ -8,7 +8,11 @@ describe('money and coin amounts', () => {
   });
 
   test('Should correctly instantiate new Money object', () => {
-    expect(userMoney.amount).toEqual(5.40);
+    expect(userMoney.amount).toEqual(5.42);
   });
+
+  // test('Should correctly return the number of quarters needed', () => {
+
+  // });
   
 });
