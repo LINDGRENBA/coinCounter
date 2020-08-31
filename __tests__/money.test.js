@@ -11,8 +11,9 @@ describe('money and coin amounts', () => {
     expect(userMoney.amount).toEqual(5.42);
   });
 
-  // test('Should correctly return the number of quarters needed', () => {
-
-  // });
+  test('Should correctly return the number of quarters needed', () => {
+    userMoney.calculateChange();
+    expect(userMoney.quarters).toEqual(20);
+  });
   
 });
