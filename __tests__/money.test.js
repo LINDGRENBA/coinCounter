@@ -25,5 +25,10 @@ describe('money and coin amounts', () => {
     userMoney.calculateChange();
     expect(userMoney.nickels).toEqual(1);
   });
+
+  test('Should correctly return the number of pennies needed', () => {
+    userMoney.calculateChange();
+    expect(userMoney.pennies).toEqual(1);
+  });
   
 });
