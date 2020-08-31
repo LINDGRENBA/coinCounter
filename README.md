@@ -22,6 +22,17 @@ Open by downloading:
 1. Clone the project from its GitHub repository.
 2. Open in your code editor of choice or drag index.html file into your browser or double click to view site.
 
+## Specifications
+
+| Behavior   |   Input   |  Output |  Met? (Y/N)  |
+|----------|:-------------:|------:|-----------:|
+| Program should instantiate a new money object | n/a | userMoney{amount: $5.24} | N |
+| Program should determine the number of quarters, dimes, nickels, and pennies needed | $5.24 | 20 quarters, 2 dimes, 0 nickels, 4 pennies | N |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+
 ## Known Bugs
 
 _No known bugs_
