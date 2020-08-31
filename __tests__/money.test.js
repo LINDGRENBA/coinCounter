@@ -15,5 +15,10 @@ describe('money and coin amounts', () => {
     userMoney.calculateChange();
     expect(userMoney.quarters).toEqual(21);
   });
+
+  test('Should correctly return the number of dimes needed', () => {
+    userMoney.calculateChange();
+    expect(userMoney.dimes).toEqual(2);
+  });
   
 });

@@ -10,13 +10,11 @@ export class Money{
   //let remainder;
   calculateChange() {
     this.quarters = Math.floor(this.amount / 0.25);
-    // let quartersRemainder = this.amount % 0.25;
-    // let dimes = Math.floor(quartersRemainder / 0.10);
+    let quartersRemainder = this.amount % 0.25;
+    this.dimes = Math.floor(quartersRemainder / 0.10);
     // let dimesRemainder = quartersRemainder % 0.10;
     // let nickels = Math.floor(dimesRemainder / 0.05);
     // let nickelsRemainder = dimesRemainder % 0.05;
     // let pennies = Math.floor(nickelsRemainder / 0.01);
-    // const answer = [quarters, dimes, nickels, pennies];
-    return this.quarters;
   }
 }
