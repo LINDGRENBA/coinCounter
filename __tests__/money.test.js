@@ -23,7 +23,7 @@ describe('money and coin amounts', () => {
 
   test('Should correctly return the number of nickels needed', () => {
     userMoney.calculateChange();
-    expect(userMoney.nickels).toEqual(2);
+    expect(userMoney.nickels).toEqual(1);
   });
   
 });
