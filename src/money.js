@@ -4,24 +4,22 @@ export class Money{
   }
 
 
-  calculateChange() {
-    this.quarters = Math.floor(this.amount / 0.25);
-    let quartersRemainder = this.amount % 0.25;
-    this.dimes = Math.floor(quartersRemainder / 0.10);
-    let dimesRemainder = quartersRemainder % 0.10;
-    this.nickels = Math.floor(dimesRemainder / 0.05);
-    let nickelsRemainder = dimesRemainder % 0.05;
-    this.pennies = Math.floor(nickelsRemainder / 0.01);
+  getChange = (amount, changeType, coins) => {
+    if(isNaN(amount)) {
+      return;
+  }
+    if (coins.length === 0) {
+      return amount;
+  }
+  
+  //
+  let roundedAmount = amount.toFixed(2);
+  let newChangeTypeArray = changeType.shift();
+  console.log('amount of money : $' + amount.toFixed(2));
+    console.log(newChangeTypeArray + " : " +  Math.floor(roundedAmount/coins[0]));
+  let remainder = roundedAmount%coins[0];
+  let newArray = coins.shift();
+  return getChange(remainder, changeType, coins);
   }
 
-  const calculateChange = (amount) => {
-    if(amount = NaN) {
-      return;
-    }
-    if(amount = 0) {
-      return amount;
-    } else {
-      return calculateChange()
-    }
-  }
 }
